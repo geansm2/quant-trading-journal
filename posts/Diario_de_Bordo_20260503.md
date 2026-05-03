@@ -4,12 +4,12 @@
 
 ---
 
-## 📌 Visão Geral
+## Visão Geral
 O objetivo da sessão de hoje foi transformar o Expert Advisor **Fibo Dynamics Evolution** em uma ferramenta de coleta e análise de dados de alta fidelidade. Migramos de uma abordagem baseada apenas em "Gain/Loss" para uma análise profunda das condições de mercado que precedem cada evento.
 
 ---
 
-## 🛠️ Implementações Técnicas
+## Implementações Técnicas
 
 ### 1. Motor Visual Nativa (MQL5)
 - **Migração**: Substituímos o desenho manual de linhas horizontais pelo objeto nativo `OBJ_FIBO`.
@@ -30,8 +30,8 @@ O objetivo da sessão de hoje foi transformar o Expert Advisor **Fibo Dynamics E
 
 ---
 
-## 🧠 O Dilema Estratégico: Setup Edge vs. Política de Risco
-Durante a sessão, surgiu uma discussão fundamental (registrada em nossa comunidade no Twitter) sobre como otimizar sistemas sem confundir a qualidade da estratégia com a gestão de risco.
+## O Dilema Estratégico: Setup Edge vs. Política de Risco
+Durante a sessão, surgiu uma discussão fundamental (registrada no Twitter) sobre como otimizar sistemas sem confundir a qualidade da estratégia com a gestão de risco.
 
 ### Registro da Discussão (Thread Twitter)
 > **Gean Machado (@decouvretoi):**  
@@ -44,7 +44,7 @@ Durante a sessão, surgiu uma discussão fundamental (registrada em nossa comuni
 
 ---
 
-## 📊 Insights da Autópsia (dna.csv)
+## Insights da Autópsia (dna.csv)
 Rodamos uma análise preliminar no período de drawdown (21/11/2025 a 12/12/2025):
 - **Diagnóstico**: O WinRate caiu para 10% devido a um aumento súbito no **ATR médio** (382 vs 337 normal).
 - **Conclusão**: O robô tentou operar em um mercado com excesso de ruído.
@@ -52,16 +52,16 @@ Rodamos uma análise preliminar no período de drawdown (21/11/2025 a 12/12/2025
 
 ---
 
-## 🚀 Próximos Passos
-- [ ] Executar Backtest de 5 anos para coleta de Big Data.
-- [ ] Processar o `dna.csv` global para encontrar o ATR de corte ótimo.
-- [ ] Validar se o Anti-Repetição melhora o Profit Factor no longo prazo.
+## Próximos Passos
+- [x] Executar Backtest de 5 anos para coleta de Big Data.
+- [x] Processar o `dna.csv` global para encontrar o ATR de corte ótimo.
+- [x] Validar se o Anti-Repetição melhora o Profit Factor no longo prazo.
 
 ---
 
 ---
 
-## 📈 Big Data: Otimização de 5 Anos (2021-2026)
+## Big Data: Otimização de 5 Anos (2021-2026)
 Rodamos uma bateria de testes em 1.964 trades executados nos últimos 5 anos para encontrar o "ponto de equilíbrio" do sistema.
 
 ### 1. Filtro de Volatilidade de "Corte"
@@ -76,12 +76,12 @@ Validamos matematicamente que o sistema depende de um **Gerenciamento de Risco A
 
 ---
 
-## 🚀 Conclusões da Sessão
+## Conclusões da Sessão
 1.  **Isolamento do Edge**: O setup de Fibonacci se paga sozinho no longo prazo, mas o "filtro de sobrevivência" (Stop Diário) é o que garante a estabilidade da curva.
 2.  **Robusteza**: O sistema provou ser lucrativo em 5 de 6 anos testados, mesmo sem filtros finos, o que mostra uma base sólida.
 3.  **Filtro ATR**: A maior descoberta foi que a volatilidade excessiva é tão prejudicial quanto a falta dela.
 
-### 📝 Nota de Documentação
+### Nota de Documentação
 Este diário agora integra a análise de Big Data. A partir de agora, as configurações padrão do EA seguirão a proporção de payoff validada nesta sessão.
 
 ---
