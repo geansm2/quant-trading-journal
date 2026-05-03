@@ -64,7 +64,7 @@ Rodamos uma análise preliminar no período de drawdown (21/11/2025 a 12/12/2025
 ## Big Data: Otimização de 5 Anos (2021-2026)
 Rodamos uma bateria de testes em 1.964 trades executados nos últimos 5 anos para encontrar o "ponto de equilíbrio" do sistema.
 
-![Otimização](quant-trading-journal/data/mega_otimizacao_5y.png)
+![Otimização]([quant-trading-journal/data/mega_otimizacao_5y.png](https://github.com/geansm2/quant-trading-journal/blob/5b1e92e5ae43b42c45688590f51bab38dd07173d/data/mega_otimizacao_5y.png))
 
 ### 1. Filtro de Volatilidade de "Corte"
 - **Descoberta**: Trades executados com **ATR > 500** têm expectativa matemática negativa ou nula no longo prazo devido ao excesso de ruído ("violinos").
