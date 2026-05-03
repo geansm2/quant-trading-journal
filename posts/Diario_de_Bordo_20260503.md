@@ -44,7 +44,7 @@ Durante a sessão, surgiu uma discussão fundamental (registrada no Twitter) sob
 
 ---
 
-## Insights da Autópsia (dna.csv)
+## Insights da Autópsia [(dna.csv)](data/dna5y.csv)
 Rodamos uma análise preliminar no período de drawdown (21/11/2025 a 12/12/2025):
 - **Diagnóstico**: O WinRate caiu para 10% devido a um aumento súbito no **ATR médio** (382 vs 337 normal).
 - **Conclusão**: O robô tentou operar em um mercado com excesso de ruído.
@@ -64,6 +64,8 @@ Rodamos uma análise preliminar no período de drawdown (21/11/2025 a 12/12/2025
 ## Big Data: Otimização de 5 Anos (2021-2026)
 Rodamos uma bateria de testes em 1.964 trades executados nos últimos 5 anos para encontrar o "ponto de equilíbrio" do sistema.
 
+![Otimização](data/mega_otimizacao_5y.png)
+
 ### 1. Filtro de Volatilidade de "Corte"
 - **Descoberta**: Trades executados com **ATR > 500** têm expectativa matemática negativa ou nula no longo prazo devido ao excesso de ruído ("violinos").
 - **Ação**: Implementamos o filtro de ATR <= 500. Isso remove **19% dos trades ruins**, aumentando o lucro total e reduzindo o desgaste da conta.
@@ -74,6 +76,7 @@ Validamos matematicamente que o sistema depende de um **Gerenciamento de Risco A
 - **Números de Ouro (Eficiência)**: A busca em grade (Grid Search) revelou que a zona de maior eficiência de sobrevivência ocorre com um **Stop Loss extremamente curto** (em torno de 1/3 do alvo planejado), provando que, no Fibonacci, se o trade não evoluir rápido, é melhor sair logo.
 - **Trava de Sequência**: O limite de **3 a 4 perdas seguidas** protege o sistema contra regimes de mercado lateral (churning), preservando o capital para os dias de tendência.
 
+![Simulação de Gerenciamento de Risco](data/simulacao_gerenciamento_risco.png)
 ---
 
 ## Conclusões da Sessão
